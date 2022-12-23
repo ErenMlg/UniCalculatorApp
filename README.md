@@ -9,7 +9,7 @@ Araştırdığım ve öğrendiğim kadarıyla MVVM Mimarisi kullanmaya çalışt
 
 ## Proje Görüntüleri
 
-![Screenshot_1671739987](https://user-images.githubusercontent.com/94524411/209342903-4c462a33-d8e3-4f2d-a086-1aaea3154aef.png | width=100)
+<img src="https://user-images.githubusercontent.com/94524411/209342903-4c462a33-d8e3-4f2d-a086-1aaea3154aef.png" width=100>
 ![Screenshot_1671726803](https://user-images.githubusercontent.com/94524411/209342940-19352710-7882-4e31-bb71-902a424a8586.png)
 ![Screenshot_1671740142](https://user-images.githubusercontent.com/94524411/209342943-6230e0d2-71e6-4a14-901c-d06ba80f3844.png)
 ![Screenshot_1671746566](https://user-images.githubusercontent.com/94524411/209342946-e81b3d20-e744-424e-8bf8-24a980f12413.png)
