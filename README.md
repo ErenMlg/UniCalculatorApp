@@ -3,8 +3,8 @@
 Kendimi geliştirmek amaçlı yapmış ve Google Play üzerinde yayınlamış olduğum bir flutter projesi. 
 
 ## Proje Hk.
-Projede splash screen kullanıldı.
-Herhangibir database işlemi bulunmamakta.
+Projede splash screen kullanıldı.<br>
+Herhangibir database işlemi bulunmamakta.<br>
 Araştırdığım ve öğrendiğim kadarıyla MVVM Mimarisi kullanmaya çalıştım.
 
 ## Proje Görüntüleri
