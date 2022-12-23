@@ -7,6 +7,7 @@ import 'package:UniversiteNotHesaplama/viewModel/harf_dropdown.dart';
 import 'package:UniversiteNotHesaplama/viewModel/kredi_dropdown.dart';
 import 'package:UniversiteNotHesaplama/view/widgets/ortalama_goster_widget.dart';
 
+import '../../model/yardim_arguments.dart';
 import '../widgets/geri_button_widget.dart';
 
 class DonemOrtalamaHesaplaPage extends StatefulWidget {
@@ -22,6 +23,15 @@ class _DonemOrtalamaHesaplaPageState extends State<DonemOrtalamaHesaplaPage> {
   late String dersAdi = '';
   double secilenHarf = 4;
   int secilenKredi = 4;
+  List<String> yardimMessage = [
+    "Dersin adı giriniz",
+    "Dersin harf notunu seçin",
+    "Dersin kredisini seçin",
+    "Ok ikonuna basınız",
+    "Her harf notunun bir ortalama karşılığı olacağından ortalama bu şekilde hesaplanır",
+  ];
+  int mesajBoyutu = 5;
+  int onemliBoyut = 4;
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +56,13 @@ class _DonemOrtalamaHesaplaPageState extends State<DonemOrtalamaHesaplaPage> {
             ),
             actions: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/Yardim',
+                      arguments: YardimArguments(
+                          mesaj: yardimMessage,
+                          mesajBoyu: mesajBoyutu,
+                          error: onemliBoyut));
+                },
                 icon: const Icon(Icons.question_mark),
               ),
             ],

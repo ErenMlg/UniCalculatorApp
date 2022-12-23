@@ -15,7 +15,7 @@ class _FinalNotListesiState extends State<FinalNotListesi> {
   Widget build(BuildContext context) {
     return DataHelper.gecmekIcinGerekenNotlar.isNotEmpty
         ? ListView.builder(
-            itemCount: 7,
+            itemCount: 11,
             itemBuilder: (context, index) {
               return Card(
                 child: Padding(
@@ -49,7 +49,7 @@ class _FinalNotListesiState extends State<FinalNotListesi> {
               child: Text(
                 'Lütfen Final Sınavınızın Yüzdesini ve Dersinizin Şuanki Ortalamasını Giriniz',
                 textAlign: TextAlign.center,
-                style: Sabitler.headerStyle,
+                style: Sabitler.emptyListStyle,
               ),
             ),
           );

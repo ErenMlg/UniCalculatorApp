@@ -59,7 +59,7 @@ class _SinavListesiState extends State<SinavListesi> {
         : Center(
             child: Text(
               "Lütfen Sınav Ekleyiniz...",
-              style: Sabitler.headerStyle,
+              style: Sabitler.emptyListStyle,
             ),
           );
   }

@@ -8,7 +8,19 @@ class DataHelper {
   static List<Ders> tumEklenenDersler = [];
   static List<Donem> tumEklenenDonemler = [];
   static List<Sinav> tumEklenenSinavlar = [];
-  static List<double> gecemeNotlari = [50, 60, 65, 70, 80, 90, 100];
+  static List<double> gecemeNotlari = [
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95,
+    100
+  ];
   static List<double> gecmekIcinGerekenNotlar = [];
 
   static notlariHesapla(double ortalama, double yuzde) {

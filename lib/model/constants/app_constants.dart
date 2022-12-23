@@ -1,27 +1,57 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Sabitler {
   static const MaterialColor anaRenk = Colors.indigo;
   static const ikinciRenk = Colors.white;
   static const String menuHeaderText = "Üniversite Not Hesaplayıcı";
-  static final TextStyle headerStyle = GoogleFonts.quicksand(
-      fontSize: 17, fontWeight: FontWeight.w900, color: anaRenk);
 
-  static final TextStyle menuHeaderStyle = GoogleFonts.quicksand(
-      fontSize: 24, fontWeight: FontWeight.w900, color: ikinciRenk);
+  static const TextStyle headerStyle = TextStyle(
+      fontFamily: 'Quicksand',
+      fontSize: 17,
+      color: anaRenk,
+      fontWeight: FontWeight.w900);
 
-  static final TextStyle NumberStyle = GoogleFonts.quicksand(
-      fontSize: 45, fontWeight: FontWeight.w800, color: anaRenk);
+  static const TextStyle emptyListStyle = TextStyle(
+      fontFamily: 'Quicksand',
+      fontSize: 17,
+      color: anaRenk,
+      fontWeight: FontWeight.w600);
 
-  static final TextStyle paragraphStyle = GoogleFonts.quicksand(
-      fontSize: 16, fontWeight: FontWeight.w600, color: anaRenk);
+  static const TextStyle menuHeaderStyle = TextStyle(
+      fontFamily: 'Quicksand',
+      fontSize: 24,
+      color: ikinciRenk,
+      fontWeight: FontWeight.w900);
 
-  static final TextStyle alertBoxStyle =
-      GoogleFonts.quicksand(fontSize: 16,fontWeight: FontWeight.w400, color: Colors.black);
+  static const TextStyle yardimHeaderStyle = TextStyle(
+      fontFamily: 'Quicksand',
+      fontSize: 20,
+      color: anaRenk,
+      fontWeight: FontWeight.w900);
 
-  static final TextStyle buttonTextStyle = GoogleFonts.quicksand(
-      fontSize: 20, fontWeight: FontWeight.w600, color: anaRenk);
+  static const TextStyle NumberStyle = TextStyle(
+      fontFamily: 'Quicksand',
+      fontSize: 45,
+      color: anaRenk,
+      fontWeight: FontWeight.w800);
+
+  static const TextStyle paragraphStyle = TextStyle(
+      fontFamily: 'Quicksand',
+      fontSize: 16,
+      color: anaRenk,
+      fontWeight: FontWeight.w600);
+
+  static final TextStyle alertBoxStyle = TextStyle(
+      fontFamily: 'Quicksand',
+      fontSize: 16,
+      color: Color.fromARGB(255, 21, 21, 21),
+      fontWeight: FontWeight.w400);
+
+  static const TextStyle buttonTextStyle = TextStyle(
+      fontFamily: 'Quicksand',
+      fontSize: 20,
+      color: anaRenk,
+      fontWeight: FontWeight.w600);
 
   static final BorderRadius myBorderRadius = BorderRadius.circular(16);
 

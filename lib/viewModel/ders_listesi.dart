@@ -52,7 +52,7 @@ class _DersListesiState extends State<DersListesi> {
         : Center(
             child: Text(
               "Lütfen Ders Ekleyiniz...",
-              style: Sabitler.headerStyle,
+              style: Sabitler.emptyListStyle,
             ),
           );
   }

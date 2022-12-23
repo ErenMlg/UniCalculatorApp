@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:UniversiteNotHesaplama/model/helper/data_helper.dart';
 
 import '../../model/constants/app_constants.dart';
+import '../../model/yardim_arguments.dart';
 import '../../viewModel/final_not_listesi.dart';
 import '../widgets/geri_button_widget.dart';
 
@@ -18,6 +19,13 @@ class _FinalGerekenNotHesaplamaPageState
   var formKey = GlobalKey<FormState>();
   double ortalama = 0;
   double yuzde = 0;
+  List<String> yardimMessage = [
+    "Finalin etki yüzdesini 10 şeklinde girin",
+    "Dersin final girmeden ortalamasını 70.55 şeklinde nokta ile giriniz",
+    "Ok ikonuna basınız"
+  ];
+  int mesajBoyutu = 3;
+  int onemliBoyut = 3;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +51,13 @@ class _FinalGerekenNotHesaplamaPageState
             ),
             actions: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/Yardim',
+                      arguments: YardimArguments(
+                          mesaj: yardimMessage,
+                          mesajBoyu: mesajBoyutu,
+                          error: onemliBoyut));
+                },
                 icon: const Icon(Icons.question_mark),
               ),
             ],

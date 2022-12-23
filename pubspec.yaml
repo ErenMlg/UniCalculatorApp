@@ -36,13 +36,33 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  google_fonts: ^3.0.1
   animated_text_kit: ^4.2.2
+  flutter_launcher_icons: ^0.11.0
+  flutter_native_splash: ^2.2.16
+  rename: ^2.0.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+flutter_native_splash:
+  color: '#45529D'
+  color_dark: '#45529D'
+  image: assets/splash.png
+  image_dark: assets/splash.png
+
+  android 12:
+    color: '#45529D'
+    color_dark: '#45529D'
+    image: assets/splash.png
+    image_dark: assets/splash.png
+
+  web: false
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -55,7 +75,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -76,6 +96,18 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: assets/Fonts/Quicksand-VariableFont_wght.ttf
+        - asset: assets/Fonts/Quicksand-Bold.ttf
+        - asset: assets/Fonts/Quicksand-Light.ttf
+        - asset: assets/Fonts/Quicksand-Medium.ttf
+        - asset: assets/Fonts/Quicksand-Regular.ttf
+        - asset: assets/Fonts/Quicksand-SemiBold.ttf
+        - asset: assets/Fonts/Quicksand-VariableFont_wght.ttf
+        - asset: assets/Fonts/Quicksand.ttf
+    
   # fonts:
   #   - family: Schyler
   #     fonts:

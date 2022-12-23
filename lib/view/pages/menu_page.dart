@@ -31,6 +31,32 @@ class MenuPage extends StatelessWidget {
                   margin: const EdgeInsets.fromLTRB(4, 4, 4, 4),
                   child: ElevatedButton.icon(
                     onPressed: () {
+                      Navigator.pushNamed(context, '/GenelOrtalamaHesapla');
+                    },
+                    style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: Sabitler.myBorderRadius),
+                        foregroundColor: Sabitler.anaRenk,
+                        backgroundColor: Sabitler.ikinciRenk,
+                        side: const BorderSide(
+                            width: 4, color: Sabitler.anaRenk)),
+                    icon: const Icon(
+                      Icons.calculate_rounded,
+                      size: 40,
+                    ),
+                    label: const Text(
+                      'Genel Ortalama Hesaplama',
+                      textAlign: TextAlign.center,
+                      style: Sabitler.buttonTextStyle,
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.fromLTRB(4, 4, 4, 4),
+                  child: ElevatedButton.icon(
+                    onPressed: () {
                       Navigator.pushNamed(context, '/DonemOrtalamaHesapla');
                     },
                     style: ElevatedButton.styleFrom(
@@ -47,34 +73,8 @@ class MenuPage extends StatelessWidget {
                       Icons.assignment_rounded,
                       size: 40,
                     ),
-                    label: Text(
+                    label: const Text(
                       'Dönem Ortalama Hesaplama',
-                      textAlign: TextAlign.center,
-                      style: Sabitler.buttonTextStyle,
-                    ),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: Container(
-                  margin: const EdgeInsets.fromLTRB(4, 4, 4, 4),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/GenelOrtalamaHesapla');
-                    },
-                    style: ElevatedButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: Sabitler.myBorderRadius),
-                        foregroundColor: Sabitler.anaRenk,
-                        backgroundColor: Sabitler.ikinciRenk,
-                        side: const BorderSide(
-                            width: 4, color: Sabitler.anaRenk)),
-                    icon: const Icon(
-                      Icons.calculate_rounded,
-                      size: 40,
-                    ),
-                    label: Text(
-                      'Genel Ortalama Hesaplama',
                       textAlign: TextAlign.center,
                       style: Sabitler.buttonTextStyle,
                     ),
@@ -99,7 +99,7 @@ class MenuPage extends StatelessWidget {
                       Icons.collections_bookmark_rounded,
                       size: 40,
                     ),
-                    label: Text(
+                    label: const Text(
                       'Ders Ortalama Hesaplama',
                       textAlign: TextAlign.center,
                       style: Sabitler.buttonTextStyle,
@@ -125,7 +125,7 @@ class MenuPage extends StatelessWidget {
                       Icons.question_mark_outlined,
                       size: 40,
                     ),
-                    label: Text(
+                    label: const Text(
                       'Finalden Kaç Almam Lazim?',
                       textAlign: TextAlign.center,
                       style: Sabitler.buttonTextStyle,

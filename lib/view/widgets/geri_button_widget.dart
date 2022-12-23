@@ -22,7 +22,7 @@ geriDonus(List list, BuildContext context) {
                           foregroundColor: Sabitler.ikinciRenk,
                           backgroundColor: Sabitler.anaRenk),
                       onPressed: () => Navigator.pushNamedAndRemoveUntil(
-                          context, '/Menu', (route) => false),
+                          context, '/', (route) => false),
                       child: const Text('Evet'),
                     ),
                     const SizedBox(
@@ -36,7 +36,7 @@ geriDonus(List list, BuildContext context) {
                           backgroundColor: Sabitler.anaRenk),
                       onPressed: () {
                         Navigator.pushNamedAndRemoveUntil(
-                            context, '/Menu', (route) => false);
+                            context, '/', (route) => false);
                         list.clear();
                       },
                       child: const Text('Hayır'),

@@ -1,3 +1,4 @@
+import 'package:UniversiteNotHesaplama/model/yardim_arguments.dart';
 import 'package:flutter/material.dart';
 import 'package:UniversiteNotHesaplama/model/helper/data_helper.dart';
 import 'package:UniversiteNotHesaplama/view/widgets/ortalama_goster_widget.dart';
@@ -21,6 +22,19 @@ class _DersOrtalamaHesaplaPageState extends State<DersOrtalamaHesaplaPage> {
   double sinavYuzdesi = 0;
   String dersAdi = "";
   String sinavTuru = "Vize";
+  List<String> yardimMessage = [
+    "Dersin adı giriniz",
+    "Sınav Türü(Vize, Kısa Sınav, Ödev, Final, vb.) giriniz",
+    "Sınavın yüzdesini 100 üzerinden giriniz",
+    "Notunuzu 100 üzerinden giriniz",
+    "Ok ikonuna basınız",
+    "Sadece 1 ders adı girebilirsiniz",
+    "Çalışması için aynı ders adını girmeniz gerekmekte",
+    "Yüzdelerin toplamı 100ü geçerse not ekleme yapamazsınız.",
+    "Notu girerken 83.45 şeklinde nokta ile giriniz"
+  ];
+  int mesajBoyutu = 9;
+  int onemliBoyut = 5;
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +60,13 @@ class _DersOrtalamaHesaplaPageState extends State<DersOrtalamaHesaplaPage> {
             ),
             actions: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/Yardim',
+                      arguments: YardimArguments(
+                          mesaj: yardimMessage,
+                          mesajBoyu: mesajBoyutu,
+                          error: onemliBoyut));
+                },
                 icon: const Icon(Icons.question_mark),
               ),
             ],
@@ -181,7 +201,7 @@ class _DersOrtalamaHesaplaPageState extends State<DersOrtalamaHesaplaPage> {
                       return null;
                     },
                     decoration: InputDecoration(
-                      labelText: 'Not Türü',
+                      labelText: 'Sınav Türü',
                       border: OutlineInputBorder(
                           borderRadius: Sabitler.myBorderRadius,
                           borderSide: BorderSide.none),

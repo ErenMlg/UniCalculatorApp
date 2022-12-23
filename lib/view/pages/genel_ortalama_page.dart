@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:UniversiteNotHesaplama/model/donem.dart';
 import '../../model/constants/app_constants.dart';
 import '../../model/helper/data_helper.dart';
+import '../../model/yardim_arguments.dart';
 import '../../viewModel/donem_listesi.dart';
 import '../../viewModel/donem_yil_dropdown.dart';
 import '../widgets/geri_button_widget.dart';
@@ -20,6 +21,14 @@ class _GenelOrtalamaHesaplaPageState extends State<GenelOrtalamaHesaplaPage> {
   String girilenDonemAdi = '';
   String secilenDonemYil = 'Dönem';
   double girilenDonemOrtalamasi = 0;
+  List<String> yardimMessage = [
+    "Dönem veya yıl adını giriniz\n(1.Sınıf, 2.Sınıf 1.Dönem vb.)",
+    "Gireceğiniz notun dönem mi yıl mı olduğunu seçiniz",
+    "Notunuzu 3.45 şeklinde nokta ile giriniz",
+    "Ok ikonuna basınız",
+  ];
+  int mesajBoyutu = 4;
+  int onemliBoyut = 4;
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +54,13 @@ class _GenelOrtalamaHesaplaPageState extends State<GenelOrtalamaHesaplaPage> {
             ),
             actions: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/Yardim',
+                      arguments: YardimArguments(
+                          mesaj: yardimMessage,
+                          mesajBoyu: mesajBoyutu,
+                          error: onemliBoyut));
+                },
                 icon: const Icon(Icons.question_mark),
               ),
             ],

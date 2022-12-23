@@ -50,7 +50,7 @@ class _DonemYilListesiState extends State<DonemYilListesi> {
         : Center(
             child: Text(
               "Lütfen Dönem Ekleyiniz...",
-              style: Sabitler.headerStyle,
+              style: Sabitler.emptyListStyle,
             ),
           );
   }
